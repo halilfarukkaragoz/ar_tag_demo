@@ -1,4 +1,7 @@
 #!/usr/bin/env python 
+
+#Halil Faruk Karagoz
+
 import numpy as np
 import time
 import subprocess as subprocess
@@ -44,8 +47,9 @@ class hist_eq:
         if (int(now) -int(self.starting_time)) %4 == 0:
             self.camera_settings_opt(cv_image)
 
-        #cv_image = self.clahe_HSV(cv_image)
-        #cv_image = self.biletral_filer(cv_image)
+
+        cv_image = self.gamma_correction(cv_image,0.7)
+        cv_image = self.clahe_HSV(cv_image)
         
         try:
             ros_img = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")

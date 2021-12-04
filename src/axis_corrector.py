@@ -1,7 +1,8 @@
 #!/usr/bin/env python 
-# Halil Faruk Karagöz 
-# Bunu başta eksenleri düzeltmek için yazmıştım sonra static frame ekleyerek çözdük bunu 
-#yüzde 90 kullanmıcaz am yine de silmeye kıyamadım yazdığım ilk düzgün ros code'u 
+
+# Halil Faruk Karagoz 
+# At first i wrote this for fixing the axis then it was working correct than we fixed it with static frame 
+#After this code wasn't necessary to use but still couldn't delete it bcs it was my first proper ros code <kiyamadim>
 import rospy 
 import tf2_geometry_msgs
 import tf
